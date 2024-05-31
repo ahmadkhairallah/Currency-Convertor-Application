@@ -1,0 +1,82 @@
+* {
+    --main-color: #152134;
+    --primary-color: #7b8ca6;
+}
+body {
+    background-color: #eee;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    color: var(--main-color);
+}
+@media(max-width: 400px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+.currency-convertor {
+width: 600px;
+margin: 30px auto;
+display: flex;
+flex-direction: column;
+background-color: #DDD;
+padding: 20px;
+}
+@media(max-width: 667px) {
+    .currency-convertor {
+        width: 400px;
+
+    }
+}
+@media(max-width: 460px) {
+    .currency-convertor {
+        width: 320px;
+
+    }
+}
+.currency-convertor .amount,
+.currency-convertor select {
+padding: 8px;
+margin-bottom: 14px;
+border: none;
+outline: none;
+border-radius: 6px;
+}
+.currency-convertor .amount:focus,
+.currency-convertor select:focus {
+border: 1px solid var(--primary-color);
+}
+.currency-convertor button {
+display: block;
+width: 100%;
+padding: 8px;
+border: none;
+outline: none;
+border-radius: 8px;
+background-color: var(--main-color);
+color: white;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 2px;
+cursor: pointer;
+transition: 0.5s;
+}
+.currency-convertor button:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--main-color);
+}
+.currency-convertor .resultDiv {
+ width: 300px;
+ height: 120px;
+ margin: 20px auto;
+ background-color: white;
+ border-radius: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ font-weight: bold;
+ color: var(--primary-color);
+}

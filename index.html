@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;1000&family=Open+Sans:wght@400;700;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <h2>Currency Convertor Application</h2>
+    <div class="currency-convertor">
+        <input class="amount" type="number" placeholder="Amount">
+        <select class="from">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="EGP">EGP</option>
+            <option value="EGP">KWD</option>
+            <option value="EGP">GBP</option>
+            <option value="JOD">JOD</option>
+        </select>
+        <select class="to">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="EGP">EGP</option>
+            <option value="EGP">KWD</option>
+            <option value="EGP">GBP</option>
+            <option value="JOD">JOD</option>
+        </select>
+        <button onclick="currencyConvert()">Convert</button>
+        <div class="resultDiv"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
